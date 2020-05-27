@@ -3,7 +3,7 @@ class Weather {
     this.apiKey = "4273a58509af8b4095dcda665253c62f";
   }
   async getWeather(city) {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${
       this.apiKey
     }&units=metric`;
     const weatherData = await fetch(url);
